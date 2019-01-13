@@ -1,0 +1,117 @@
+
+
+body{ }
+a:hover{ text-decoration: none!important; }
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.pors-container{  font-size: 14px; font-family: sans-serif;  width: 760px; margin: 0 auto; border-left:1px solid #DEDEDE; border-right:1px solid #DEDEDE;  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); padding: 10px 10px; box-sizing: border-box; }
+	.pors-cols-bg{ }
+	
+	
+.pors-editable-box{ width: 718px; height: 378px; margin: 0 auto; background: url(../images/cover-bg-editable.png) no-repeat; background-size: contain; padding: 20px; box-sizing: border-box; position: relative; }
+	.edit-text{ background: rgba(0, 0, 0, 0.75); padding: 5px 15px 0px 15px; display: inline-block; color: #eeb631; font-family:'sukhumvit_setmedium'; /*font-family: 'sukhumvit_setmedium';*/  border: 1px solid rgba(0, 0, 0, 0.15);  cursor: pointer; font-size: 36px; position: absolute; }
+	.active-drag{ border: 1px solid #f4af64;  }
+	.active-text{ border: 1px solid #ea2929 }
+
+.pors-picture{ display: none; }
+img#mirror{ width: 718px; height: 378px; }
+	
+	
+	a.pors-btt-icon{ display: inline-block; background: #201e30; width: 20px; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; color: #ffffff; font-size: 10px; padding: 3px 0 0 0; 
+}
+
+.pors-editable-box-tools{ margin: 10px 0 0 10px; }
+
+.text-bold{ font-family: 'sukhumvit_setsemi_bold'!important; }
+.text-italic{ font-style: italic!important; }
+
+.edit-text-container{ display: inline-block; }
+.edit-text-relative{ position: relative; }
+
+.btt-move{ display: inline-block; background: #201e30; width: 20px; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; color: #ffffff; font-size: 10px; padding: 3px 0 0 0; right: -6px; top: -3px; position: absolute; display: none; }
+.btt-delete{ display: inline-block; background: #201e30; width: 20px; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; color: #ffffff; font-size: 10px; padding: 3px 0 0 0; right: -6px; top:18px; position: absolute; display: none; }
+
+#log{ width: 100%; height: 200px; bottom: 0px; padding: 10px 10px; background: #e4e4e4; display: none; }
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 3px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 3px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+.editable-tools a:hover{ color: #fff; }
+
+a.pors-btn {
+  padding: 8px 12px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 20px 10px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+a.pors-btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+  color: #fff!important;
+}
+
+
+.text-tools{ display: none; }
+
+/* iPhone 6/7/8 Potrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+img#mirror{ display: block; max-height: 100%; max-width: 100%; }
+	.edit-text{ font-size:14px; padding: 5px 10px 3px 10px; }
+	.pors-container{ width: 100%; height: 197px; }
+	.pors-editable-box{ width: 100%; height: 197px; padding: 10px 10px; }
+	
+	.pors-picture{ width: 100%; height: 208px; margin: 0px 0 0 0; }
+	
+	.pors-info{ text-align: center; font-size: 14px; }
+	.pors-info-action{ text-align: center; }
+	
+	.pors-btn {
+		  padding: 15px 25px;
+		  font-size: 22px;
+		  text-decoration: none;
+		  margin: 20px;
+		  color: #fff;
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.pors-btn:active {
+		  transform: translate(0px, 5px);
+		  -webkit-transform: translate(0px, 5px);
+		  box-shadow: 0px 1px 0px 0px;
+		}
+
+ }
