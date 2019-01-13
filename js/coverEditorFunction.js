@@ -14,6 +14,38 @@ function init(){
 	setFontBold();
 	setFontItalic();
 	savePicture();
+	deleteText();
+	goBackEditImage();
+}
+
+function goBackEditImage(){
+	if(iOS){
+		$(document).on('touchstart','#btt-edit-picture',function(){
+			
+			$(".pors-picture").fadeOut('slow',function(){
+					$(".pors-container").fadeIn();
+				});
+			return false;
+		});
+	}
+}
+
+function deleteText(){
+	if(iOS){
+		$(document).on('touchstart','#icn-font-delete',function(){
+			$("#text-"+activeID).remove();
+			$(".text-tools").hide();
+			$(".editable-tools").show();
+			return false;
+		});
+	}else{
+		$(document).on('click','#icn-font-delete',function(){
+			$("#text-"+activeID).remove();
+			$(".text-tools").hide();
+			$(".editable-tools").show();
+			return false;
+		});
+	}
 }
 
 function saveAs(uri, filename) {

@@ -20,8 +20,9 @@ a:hover{ text-decoration: none!important; }
 img#mirror{ width: 718px; height: 378px; }
 	
 	
-	a.pors-btt-icon{ display: inline-block; background: #201e30; width: 20px; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; color: #ffffff; font-size: 10px; padding: 3px 0 0 0; 
+	a.pors-btt-icon{ display: inline-block; background: #696969; width: 20px; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; color: #ffffff; font-size: 10px; padding: 3px 0 0 0; 
 }
+a.pors-btt-icon:hover{ color: #ffffff; background: #8b8b8b }
 
 .pors-editable-box-tools{ margin: 10px 0 0 10px; }
 
@@ -81,7 +82,7 @@ a.pors-btn:active {
 }
 
 
-.text-tools{ display: none; }
+.text-tools{ display: none; padding: 10px 20px; }
 
 /* iPhone 6/7/8 Potrait */
 @media only screen 
